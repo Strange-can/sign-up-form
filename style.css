@@ -139,6 +139,18 @@ input[required]:user-invalid {
     border-color: red;
 }
 
+input[type="tel"]:user-invalid {
+    border-color: red;
+}
+
+input[type="tel"]:user-valid {
+    border-color: green;
+}
+
+input[type="tel"]:placeholder-shown {
+    border-color: lightgray;
+}
+
 #pwd-req {
     font-size: 0.6em;
     padding: 0;
