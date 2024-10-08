@@ -29,10 +29,43 @@
             <div class="form-div">
                 <p id="call-to-action">Let's do this!</p>
                 <form action="" method="get">
-                    <label for="firstname">FIRST NAME</label>
-                    <input type="text" id="firstname" name="firstname" required />
+                    <div class="input">
+                        <label for="firstname">FIRST NAME<span aria-label="required">*</span></label>
+                        <input type="text" id="firstname" name="firstname" required />
+                    </div>
 
+                    <div class="input">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" id="lastname" name="lastname" />
+                    </div>
+
+                    <div class="input">
+                        <label for="useremail">EMAIL<span aria-label="required">*</span></label>
+                        <input type="email" id="useremail" name="useremail" placeholder="name@example.com" required />
+                    </div>
+
+                    <div class="input">
+                        <label for="tel-number">PHONE NUMBER</label>
+                        <input type="tel" id="tel-number" name="tel-number" />
+                    </div>
+
+                    <div class="input">
+                        <label for="pwd">PASSWORD<span aria-label="required">*</span></label>
+                        <input type="password" id="pwd" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required />
+                        <p id="pwd-req">password must be at least 8 characters long and have at least 1 uppercase letter, 1 lowercase letter and 1 digit.</p>
+                    </div>
+
+                    <div class="input">
+                        <label for="cfm-pwd">CONFIRM PASSWORD<span aria-label="required">*</span></label>
+                        <input type="password" id="cfm-pwd" name="cfm-password" required />
+                    </div>
+
+                    <button>Create Account</button>
                 </form>
+
+                <div>
+                    <p id="question">Are you from The Odin Project? <a href="https://youtu.be/xvFZjo5PgG0?si=_79B4LBKh8zqCR8T" target="_blank" rel="noreferrer">Click here</a></p>
+                </div>
             </div>
         </div>
     </div>
